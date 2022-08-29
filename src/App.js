@@ -1,5 +1,6 @@
 import React from "react";
 import Landing from "./pages/Landing";
+import Complex from "./components/Complex";
 import {
   Animator,
   ScrollContainer,
@@ -31,6 +32,11 @@ function App() {
       <ScrollPage>
         <Animator animation={batch(Fade())}>
           <Showcase />
+        </Animator>
+      </ScrollPage>
+      <ScrollPage>
+        <Animator animation={batch(Fade())}>
+          <Complex />
         </Animator>
       </ScrollPage>
     </ScrollContainer>
